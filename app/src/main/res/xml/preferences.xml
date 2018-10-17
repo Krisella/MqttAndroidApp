@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title = "Network Options">
+
+        <EditTextPreference
+            android:defaultValue="@string/default_ip_address"
+            android:title="IP Address"
+            android:key="@string/key_mqtt_ip_address"
+            android:summary="@string/default_ip_address"/>
+
+        <EditTextPreference
+            android:defaultValue="@string/default_port"
+            android:title="Port"
+            android:key="@string/key_mqtt_port"
+            android:summary="Specify port for MQTT connectivity"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title = "Message Frequency">
+
+        <EditTextPreference
+            android:defaultValue="@string/default_frequency"
+            android:title="Frequency in seconds"
+            android:key="@string/key_mqtt_message_interval"
+            android:summary="Specify the frequency for receiving messages"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
